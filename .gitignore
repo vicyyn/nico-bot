@@ -1,0 +1,13 @@
+node_modules
+build
+.env
+
+old
+data.json
+
+package-lock.json
+
+.DS_Store
+
+
+old.ts

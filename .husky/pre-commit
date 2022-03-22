@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+FILES_TO_LINT=`git diff --name-only --staged --diff-filter=d | grep "^src/" | tr '\n' ' '`
+FILES_TO_FORMAT=`git diff --name-only --staged --diff-filter=d | tr '\n' ' '`
+
+npm run lint $FILES_TO_LINT
+npm run format $FILES_TO_FORMAT
+git add $FILES_TO_FORMAT
