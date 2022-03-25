@@ -21,8 +21,10 @@ Nico is a Discord Bot that was made to interact with Solana Blockchain. Has many
 - View NFT metadata command (can use https://github.com/vicyyn/MetaplexMetadata-js)
 
 ## Note
+- **Storing private keys on a database is not secure. Use at your own risk.**
 - **Nico is in active development, so all APIs are subject to change.**
-- **This code is unaudited. Use at your own risk.**
+- **This code is unaudited.**
+
 
 ## Setup
 - Create a Discord App and get the ID, Public Key and Token
